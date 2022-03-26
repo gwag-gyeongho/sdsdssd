@@ -1,0 +1,5 @@
+x,y,w,h=map(int,input().split())
+print(x)
+print(y)
+print(w)
+print(h)
