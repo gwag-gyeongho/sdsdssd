@@ -50,7 +50,7 @@ top
 0
 3
 ## 코드
-'''
+```
 import sys
 from sys import stdin
 num = int(input())
@@ -77,5 +77,5 @@ for i in range(num):
         else:
             print(asdf[len(asdf)-1])
     sta.clear()
-'''
+```
 ###  Code Review
