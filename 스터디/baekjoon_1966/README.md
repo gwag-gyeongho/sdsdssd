@@ -66,4 +66,4 @@ for i in range(k):
     print(aaaa)     # 큐의 b번째에 있는 인덱스 값이 몇번째로 프린트 되었는지 출력
 
 ```
-### 
+### Code Review
