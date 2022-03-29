@@ -67,3 +67,4 @@ for i in range(k):           #k번 반복하기
             print(h.heappop(wjfHeap)[1])
 ```
 ### Code Review
+절댓값 힙은 이전에 풀었던 최대 힙과 최소 힙을 응용하여 어렵지 않게 풀 수 있었다.
