@@ -1,28 +1,24 @@
 from sys import stdin
 
 s=1
+cnt=0
 k = int(stdin.readline())
-sta=[0]
+sta=[]
 seq=[]
-for i in range(k):
+for _ in range(k):
     num = int(stdin.readline())
-    seq.append(num)
-
-for i in range(seq[0]):
-    sta.append(s)
-    s+=1
-    print("+")
-print("-")
-
-for i in range(1, len(seq)):
-    if seq[i]>seq[i-1]:
-        sta.append(s)
-        print("+\n"*(seq[i]-seq[i-1]))
-        s+=1
-    else :
-        sta.pop()
-        print("-")
-    
-
-
+    while s<=num:
         
+        seq.append("+")
+        sta.append(s)
+        s+=1
+    if sta[-1]==num:
+        seq.append("-")
+        sta.pop()
+    else:
+        cnt+=1
+if cnt==0:
+    for i in seq:
+        print(i)
+else:
+    print("NO")
