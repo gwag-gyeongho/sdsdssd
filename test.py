@@ -1,18 +1,7 @@
-#소수 출력
+k=[0,1]
 
-while True:
-    num1=int(input("***첫 번째 숫자를 입력하세요 :"))
-    num2=int(input("***두 번째 숫자를 입력하세요 :"))
-    if num1 >=2:
-        for i in range(num1,num2):
-            a=0
-            for j in range(2,i):
-                if i%j==0:
-                    a+=1
-            if a==0:
-                print(i)
-        break
-    else:
-        print("첫번째 숫자를 1보다 큰 숫자를 입력하세요")
-    
-    
+n = int(input())
+
+for i in range(n-1):
+    k.append(k[i]+k[i+1])
+print(k[-1])
