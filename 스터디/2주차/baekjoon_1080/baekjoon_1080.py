@@ -12,4 +12,3 @@ print(matrix)
 for i in range(2*m) :
     matrix[i]=input().split()
 print(matrix)
-
