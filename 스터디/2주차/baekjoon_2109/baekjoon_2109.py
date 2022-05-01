@@ -13,7 +13,6 @@ print(lecture)
 money=[]
 for i in lecture:
   h.heappush(money, i[0])
-  print(money,"----")
   if (len(money)>i[1]):
     h.heappop(money)
 sum=0

@@ -6,7 +6,7 @@ k=int(stdin.readline())
 for _ in range(k):
     lecture.append(list(map(int,sys.stdin.readline().split())))
 lecture.sort()
- 
+
 
 classroom=[]
 h.heappush(classroom,lecture[0][1])

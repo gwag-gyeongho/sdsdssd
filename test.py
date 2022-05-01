@@ -1,6 +1,3 @@
-s=int(input("자정부터 경과 시간을 초 단위로 입력"))
-h=s//3600
-s=s%3600
-m=s//60
-s=s%60
-print("현재시각",h,"시",m,"분",s,"초")
+a=input().split()
+for i in a:
+    print(chr(int(i)),end="")
