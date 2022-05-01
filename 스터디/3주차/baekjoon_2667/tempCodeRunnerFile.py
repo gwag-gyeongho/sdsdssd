@@ -1,0 +1,1 @@
+    acomplex[nx][ny]=0
