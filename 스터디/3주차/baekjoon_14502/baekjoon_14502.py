@@ -3,8 +3,9 @@ from sys import stdin
 from collections import deque
 
 
-N,M = map(int,sys.stdin.readline().split())
-maze=[]
+n,m = map(int,sys.stdin.readline().split())
+lab=[]
 
-for _ in range(N):
-    maze.append(list(map(int, input())))
+for _ in range(n):
+    lab.append(list(map(int,stdin.readline().rstrip().split())))
+
