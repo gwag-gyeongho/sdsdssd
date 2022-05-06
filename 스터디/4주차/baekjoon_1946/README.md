@@ -59,7 +59,11 @@ for _ in range(t):
     for i in range(n-1):
         cnt.append(abs(a[i]-a[i+1]))
     print(int(max(cnt)))
-    ```
+ 
+ 
+ ### CodeReview
+ 
+ asdfaf
     
     
     
