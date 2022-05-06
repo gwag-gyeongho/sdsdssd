@@ -14,6 +14,5 @@ for i in range(1, k):
     if meeting[i][0] >= conference :  #다음 회의가 시작하는 시간이 이전 회의가 끝나는 시간보다 크거나 같은 경우 실행
         sum += 1 
         conference  = meeting[i][1] #변수의 값 바꿔주기
-print(sum)
 
     
