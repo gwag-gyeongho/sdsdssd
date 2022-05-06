@@ -1,6 +1,7 @@
+#먹을것인가 먹할것인가
 import sys
 from sys import stdin
-import bisect 
+import bisect
 # *이진탐색* 오름차순 정렬되어 있는 리스트에서 원하는 값을 빠르게 찾을 수 있음
 
 # 반복할 횟수 입력 받기
@@ -19,4 +20,3 @@ for _ in range(t):
         cnt+= bisect.bisect(B,i-1)
     #결과 출력
     print(cnt)
-

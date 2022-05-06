@@ -39,7 +39,7 @@ for i in range(n):
             cnt += 1
             apartment.append(sum)
             sum=0
-#리스트 내림차순으로 정렬
+#리스트 오름차순으로 정렬
 apartment.sort()
 #총 단지 수 가 몇개인지 출력
 print(len(apartment))

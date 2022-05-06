@@ -16,5 +16,5 @@ for i in range(1, k):
     else:
         h.heappop(classroom)
         h.heappush(classroom,lecture[i][1])
-        
+
 print(len(classroom))
