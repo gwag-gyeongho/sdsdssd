@@ -1,6 +1,7 @@
 import sys
 from sys import stdin
 import heapq as h
+
 lecture=[]
 k=int(stdin.readline())
 for _ in range(k):

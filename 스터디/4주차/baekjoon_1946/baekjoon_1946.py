@@ -1,3 +1,4 @@
+#신입사원 
 import sys
 from sys import stdin
 #테스트 할 횟수 입력 받기
