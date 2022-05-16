@@ -1,5 +1,1 @@
-
-        
-        a = mid
-    else:
-        r = mid - 1
+print(final_exam)
