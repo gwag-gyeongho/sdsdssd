@@ -1,7 +1,7 @@
 n, m = map(int, input().split()) 
 listA = []
 for _ in range(n): # 리스트A 선언
-    listAc
+    listA=[]
 listB = []
 for _ in range(n): # 리스트B 선언
     listB.append(list(map(int, list(input()))))

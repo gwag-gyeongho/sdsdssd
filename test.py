@@ -1,60 +1,19 @@
-def base2 (num):
-    if num<1:
-        return "0"
-    elif num==1:
-        return "1"
-    if num%2==0:
-        return base2(int(num/2))+"0"
-    elif num%2 == 1:
-        return  base2(int(num/2))+ "1"
+class person :
+    def __init__(self, name, age, height, weight):
+        self.m_name = name
+        self.m_age = age
+        self.m_height = height
+        self.m_weight = weight
 
-def  base8 (num):
-    if num<8:
-        return str(num)
-    elif num==8:
-        return "1"
-    if num%8==0:
-        return base2(int(num/8))+"0"
-    elif num%8 != 0:
-        return  base2(int(num/8))+ str(num%8)
+    def greeting(self):
+        print('안녕하세요 저는', self.m_name, '입니다')
+    def HappyBirthday(self):
+        self.m_age+=1
 
-def base16 (num):
-    if num<10:
-        return str(num)
-    elif num==10:
-        return "A"
-    elif num==11:
-        return "B"
-    elif num==12:
-        return "C"
-    elif num==13:
-        return "D"
-    elif num==14:
-        return "E"
-    elif num==15:
-        return "F"
-    elif num==16:
-        return "10" 
-
-    if num%16 ==0:
-        return base2(int(num/16))+"0"
-    elif num%16 < 10:
-        return  base2(int(num/16))+ str(num%16)
-    elif num%16 == 10:
-        return base2(int(num/16))+"A"
-    elif num%16 == 11:
-        return base2(int(num/16))+"B"
-    elif num%16 == 12:
-        return base2(int(num/16))+"C"
-    elif num%16 == 13:
-        return base2(int(num/16))+"D"
-    elif num%16 == 14:
-        return base2(int(num/16))+"E"
-    elif num%16 == 15:
-        return base2(int(num/16))+"F"
-
-num= int(input("10진수 입력--> "))
-print("2진수: ",base2(num))
-print("8진수: ",base8(num))
-print("16진수: ",base16(num))
+james = person('홍길동', 27, 185, 74)
+james.greeting()
+print(james.m_age)
+print(james.m_height)
+print(james.m_weight)
+james.HappyBirthday()
 
