@@ -1,7 +1,8 @@
 #include<stdio.h>
-
 int main(){
-    printf("Hello World!!\n");
+    long long int d;
+    scanf("%lld", &d); 
+    
+    printf("%lld", d);
     return 0;
-
 }
